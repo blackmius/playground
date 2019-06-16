@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: sans-serif; overflow: hidden; }
+
+.g { display: flex; }
+.g.col { flex-direction: column; }
+.g.reverse { flex-direction: row-reverse; }
+.g.ac { align-items: center; }
+.g.wrap { flex-wrap: wrap; }
+.jc { justify-content: center; }
+.s1 { flex: 1; }
+.fx { position: fixed;}
+.w { width: 100%; }
+.h { height: 100%; }
+.cp { cursor: pointer; }
+.ovh { overflow: hidden; }
+
+.mw { max-width: 600px; }
+
+.CodeMirror-ruler { z-index: 5; border-left: 1px solid #ddd; width: 100%;
+    background: #dddddd20;  }
+.CodeMirror-scroll { min-height: 200px; }
+
+.r { margin: -15px; padding: 15px; }
+
+.sp1 { margin-top: 15px; }
+.sp2 { margin-top: 30px; }
+
+.spl0 { margin-left: 5px; }
+.spl1 { margin-left: 15px; }
+.spl2 { margin-left: 30px; }
+
+.bg0 { background: #fff; }
+.bg1 { background: #f7f7f7; }
+
+.fs0 { font-size: 28px; }
+.fs1 { font-size: 24px; }
+.fs2 { font-size: 20px; }
+
+.ws { white-space: nowrap; }
+
+.b { font-weight: bold }
+
+.ph0 { padding-left: 30px; padding-right: 30px; }
+.ph1 { padding-left: 15px; padding-right: 15px; }
+
+.pv0 { padding-top: 45px; padding-bottom: 45px; }
+.pv1 { padding-top: 5px; padding-bottom: 5px; }
+
+iframe { width: 100%; border: 0; }
+.out iframe { height: 100%; }
+.out { border-left: 1px solid #ddd; }
+
+.sohc { display: none; }
+.soh:hover .sohc { display: initial; }
+
+a { text-decoration: none; color: #333; }
+a:hover { background: #91d7f8; }
+
+.br { border-radius: 4px; }
