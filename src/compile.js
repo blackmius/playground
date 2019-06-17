@@ -31,7 +31,7 @@ const postmessage = `<script>window.postMessage('resize');
 .observe(document, { attributes: true, childList: true, subtree: true });
 </script>`;
 
-const meta = `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">`;
+const meta = `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{height:fit-content}</style>`;
 
 export const export_ = _ => Object.keys(docs).map(
     f => `// file: ${f}\n${docs[f].getValue()}`).join('\n');
@@ -62,7 +62,7 @@ export function output(el) {
     iframe.contentDocument.write(src);
     iframe.contentDocument.close();
     
-    iframe.contentWindow.addEventListener("message", _ => {
+    iframe.contentWindow.addEventListener("message", _ => setTimeout(_ => {
         iframe.height = iframe.contentWindow.document.children[0].offsetHeight;
-    }, false); 
+    }, 10), false); 
 }
