@@ -31,7 +31,7 @@ const postmessage = `<script>window.postMessage('resize');
 .observe(document, { attributes: true, childList: true, subtree: true });
 </script>`;
 
-const meta = `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{height:fit-content;overflow-x:hidden}</style>`;
+const meta = `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>html,body{height:max-content;overflow-x:hidden}</style>`;
 
 export const export_ = _ => Object.keys(docs).map(
     f => `// file: ${f}\n${docs[f].getValue()}`).join('\n');
