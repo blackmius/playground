@@ -30,7 +30,7 @@ function load() {
         if (d.cm && d.cm.c) d.cm.c.remove();
     });
     docs = {};
-    const data = atob(page.args.data);
+    const data = decodeURIComponent(escape(atob(page.args.data)));
     let src = '', file;
     for (const line of data.split('\n')) {
         if (line.slice(0, 9) === '// file: ') {
